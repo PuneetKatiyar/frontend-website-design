@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: linear-gradient(135deg, #0202f0, #e47bce70, #6d5353);
+    min-height: 100vh;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+header, main, footer {
+  width: 100%;
+}
+
+.navbar {
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border: 3px solid black;
+  margin: 10px;
+  border-radius: 10px;
+  
+}
+
+.menu-left {
+  display: flex;
+}
+
+.menu-right {
+  display: flex;
+}
+.menu-btn1{
+  background-color: #6d5353;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+}
+.menu-btn1{
+  background-color: rgb(8, 121, 250);
+
+}
+.menu-btn1:hover{
+  background-color: #0a0a0a;
+  font-weight: bolder;
+
+}
+
+.menu-btn {
+  background-color: #6d5353;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 0 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+}
+
+.menu-btn:hover {
+  background-color: #131213;
+  color: #ddd;
+  font-weight: bolder;
+}
+main {
+  display: flex;
+  justify-content:space-around;
+  height: auto;
+}
+
+aside {
+  width: 40%;
+}
+
+aside header {
+  background-color: pink;
+  padding: 10px;
+  text-align: center;
+  border: 2px ridge black ;
+}
+
+section {
+  /* padding: 10px; */
+  border: 2px solid  black; 
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.container1, .container2 {
+  width: 49%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  padding: 1em;
+ grid-gap: 20px;
+  height: 400px;
+  
+}
+
+.footer-column {
+  padding: 2em;
+  text-align: center;
+  border: 2px solid red;
+  color: white;
+  font-weight: bold;
+  width: 400px;
+  border-radius:10px;
+}
+
+#pic1 {
+  background-image: url('816_Lovely_Professional_University_LPU (1).avif');
+    background-size: cover; /* Adjust this to 'cover' or 'contain' based on your preference */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic2 {
+  background-image: url('Banner-LPU-Distance-Education.webp');
+  background-size: cover; /* Adjust this to 'cover' or 'contain' based on your preference */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic3 {
+  background-image: url('open-theatre.jpg');
+  background-size: cover; /* Adjust this to 'cover' or 'contain' based on your preference */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#pic4 {
+  background-image: url('joinus3.jpg');
+  background-size: cover; /* Adjust this to 'cover' or 'contain' based on your preference */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container1, .container2 {
+    width: 90%;
+  }
+
+  footer {
+    display: inline;
+  }
+
+  .footer-column {
+    height: 150px;
+    margin: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu-left, .menu-right {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .menu-left {
+    margin-bottom: 10px;
+  }
+}
